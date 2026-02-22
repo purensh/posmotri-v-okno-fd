@@ -123,6 +123,7 @@ ol {
   flex-direction: column;
   flex-grow: 1;
   max-width: 196px;
+  gap: 6px;
 }
 
 .search-form__fieldset-title {
@@ -138,7 +139,6 @@ ol {
   text-transform: uppercase;
   font-style: normal;
   font-family: "Oswald", sans-serif;
-  height: 210px;
 }
 
 .content__accent {
@@ -155,6 +155,7 @@ ol {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
+  line-height: 100%;
   font-family: "Oswald", sans-serif;
   white-space: nowrap;        
   overflow: hidden;
