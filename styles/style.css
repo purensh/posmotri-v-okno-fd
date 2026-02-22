@@ -88,6 +88,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__list {
@@ -135,14 +136,16 @@ ol {
   font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
+  font-style: normal;
   font-family: "Oswald", sans-serif;
+  height: 210px;
 }
 
 .content__accent {
   color: #545050;
 }
 
-.content__card-link{
+.content__card-link {
   text-decoration: none;
   color: #FFF;
   display: block;
@@ -163,7 +166,11 @@ ol {
   line-height: 16.2px;
   font-weight: 400;
   font-family: "Fira Sans Condensed", sans-serif;
-  line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden; 
 }
 
 .visually-hidden {
@@ -275,6 +282,10 @@ ol {
 
 .more-button {
   width: 100%;
+  inline-size: calc(100% - 4px);
+  margin: 0 2px 2px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .button:hover {
@@ -292,10 +303,6 @@ ol {
 .button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
-}
-
-.content__card-link {
-  display: block;
 }
 
 .content__card-link_current {
